@@ -1,0 +1,19 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033
+{\fonttbl{\f0\fswiss\fcharset0 Calibri;}}
+{\colortbl ;\red31\green56\blue100;\red68\green84\blue106;\red34\green34\blue34;}
+{\info{\title Evaluation Note}{\author AI Governance - Contoso Financial Services}}
+\paperw12240\paperh15840\margl1440\margr1440\margt1440\margb1440\viewkind1
+\pard\sa60\sl276\slmult1\f0\fs17\cf2\b CONTOSO FINANCIAL SERVICES  |  AI GOVERNANCE\b0\par
+\pard\sa40\sl360\slmult1\f0\fs40\cf1\b Evaluation Note\b0\par
+\pard\brdrb\brdrs\brdrw10\brdrcf1\sb60\sa160\par
+\pard\sb0\sa60\sl276\slmult1\f0\fs21\cf2\b0\i0 Contoso Customer Onboarding Assistant \u8212? critical evaluation of raw GenAI outputs\par
+\pard\sb0\sa260\sl276\slmult1\f0\fs17\cf2\b0\i0 AI Governance Analyst  |  25 August 2026  |  Companion to Audit Trail Record.docx and Corrected AI Risk Register and STRIDE Worksheet.docx\par
+\pard\sb0\sa160\sl276\slmult1\f0\fs22\cf3\b0\i0 Three weaknesses in the raw GenAI outputs were material enough to change the finalised documents.\par
+\pard\sb140\sa180\sl276\slmult1\f0\fs22\cf3\i0\b 1. Factual accuracy and grounding.\b0  In draft entry R-05 the assistant asserted a specific platform content-retention behaviour as established fact, while listing that same behaviour as an unverified assumption in its own output. An assertion the output cannot itself support is ungrounded. Correction: restated as an unconfirmed configuration state, so the entry holds whichever way verification lands. Verification source: the Chief Risk Officer's tasking, which states the tenant-boundary constraint and says nothing about vendor retention.\par
+\pard\sb140\sa180\sl276\slmult1\f0\fs22\cf3\i0\b 2. Confidence calibration.\b0  Draft entry R-08 carried a likelihood score of 4 with no supporting data, and the output's own uncertainty section conceded the figure was unsupported. Correction: the numeric score was replaced with stated reasoning naming the three change surfaces the rating rests on. Verification source: the assistant's CONFIDENCE AND UNCERTAINTY list, Audit Trail Record, Section 2.\par
+\pard\sb140\sa180\sl276\slmult1\f0\fs22\cf3\i0\b 3. Audit trail capture.\b0  Draft threat T-04 accepted hash-only logging as sufficient. A hash proves a record is unaltered but cannot reconstruct a disputed statement. Correction: full transcript plus retrieved-context capture, with the 90-day ceiling reconciled against the record-keeping floor. Verification source: the Output Evaluation Checklist, Section 4, which requires Context_Docs_Retrieved to be bound to every request.\par
+\pard\brdrb\brdrs\brdrw6\brdrcf2\sb200\sa160\par
+\pard\sb0\sa260\sl276\slmult1\f0\fs17\cf2\b0\i Word count: 205 words (target 150\u8211?250), excluding title, headings block and provenance note.\par
+\pard\sb60\sa100\sl276\slmult1\f0\fs20\cf1\i0\b Provenance note (not part of the word-counted evaluation note)\b0\par
+\pard\sb0\sa120\sl276\slmult1\f0\fs19\cf3\b0\i0 The Guided Scenario Simulation environment was unavailable and confirmation is pending from the environment owner. The prompts recorded in Audit Trail Record.docx were therefore submitted to a substitute assistant session, and the Microsoft Purview DLP indicator and Azure AI Content Safety Prompt Shields could not be observed as active. The pre-submission check block in Corrected AI Risk Register and STRIDE Worksheet.docx states those two checks as confirmed and requires amendment to "not performed \u8212? environment unavailable" before submission. Input discipline was applied regardless: no Confidential or Highly Confidential labelled content was pasted into any prompt, and data classes were referenced by class name only.\par
+}

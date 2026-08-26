@@ -1,0 +1,31 @@
+PROMPT 2 — INTEGRATION RATIONALE
+AI Risk & Security Strategy Report — Contoso Financial Service GenAI Knowledge Assistant
+
+
+The most important consistency decision was to model the FAIR scenario as a chained
+loss path rather than a single risk.
+
+The supplied calculator quantified prompt injection (R-05) with a secondary loss band
+reaching $11,000,000 in regulatory penalty. That figure could not survive the scope
+boundary set in Section 2, which excludes customer personal data from the indexed
+corpus. Against a correctly bounded corpus, a successful injection extracts internal
+policy content — sensitive, but not a notifiable breach at anything near that scale.
+Two sections were quietly contradicting each other.
+
+I resolved it by making R-01, ingestion boundary failure, the enabling precondition of
+the quantified scenario: the loss magnitude is credible only where excluded content is
+already in the index, and injection is the mechanism that extracts it.
+
+That decision then propagated. Sensitivity analysis showed ingestion controls cutting
+modelled maximum exposure by roughly 73 per cent against 60 per cent for endpoint
+controls. This is why Section 5 flags the complete absence of DLP capability as the
+highest-leverage gap, why R-01 outranks prompt injection in the prioritization, and why
+Section 7 names ingestion boundary enforcement as one of only two conditions whose
+failure converts conditional approval into deferral.
+
+It strengthened defensibility because the number now carries a stated mechanism. A
+committee member asking why a fine-scale figure attaches to an internal-only system
+gets an answer, rather than exposing an inherited assumption nobody had tested.
+
+
+[Word count: 234]
